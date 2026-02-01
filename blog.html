@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brocode Automotive | Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <!-- Header -->
+   <header class="site-header">
+    <div class="logo-circle">
+      <img src="logo.png" alt="Brocode Automotive">
+      
+    </div>
+    <h2 class="logo-link">Brocode Automotive</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <a href="tel:+917010325310" class="call-btn">📞 Call Now</a>
+  </header>
+
+  <section class="blog">
+    <h2>Latest Updates</h2>
+    <article>
+      <h3>Tips for Maintaining Your Car</h3>
+      <p>Regular servicing ensures long-term performance...</p>
+    
+  <div class="about-container">
+  <h4>
+   
+    <span id="dots">...</span>
+    <span id="more" style="display:none;">
+         Brocode Automotive is your trusted destination for buying, selling, and accessorizing all kinds of vehicles in Coimbatore.
+         <br>
+      Founded by Venkatraman B (B.E. Mechanical Engineering), we combine technical expertise with a passion for automobiles to deliver reliable and transparent services.
+      <br><br>
+      We deal in cars, bikes, and other vehicles, offering quality-checked options, fair pricing, and complete assistance throughout the process.
+      Along with vehicle trading, we also provide a wide range of automotive accessories to enhance performance, safety, and style.
+      <br><br>
+      Located at Lakshmipuram, Ganapathy, Brocode Automotive is committed to customer satisfaction, honest deals, and long-term relationships.
+      Whether you’re buying your first vehicle, upgrading, or selling, we’ve got your back—the Brocode way.
+    </span>
+  </h4>
+
+  <a href="#" onclick="readMore()" id="readMoreBtn">Read More</a><br>
+</div>
+</article>
+  </section>
+ 
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 Lakshmipuram, Ganapathy, Coimbatore</p>
+    <p>📞 70103 25310 | 📷 @brocode_automotive</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </nav>
+  </footer> 
+
+</body>
+</html>
